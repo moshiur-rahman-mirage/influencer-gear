@@ -118,9 +118,53 @@ nav li a{
     height: 100%;
 
   }
-  
 
-/* Responsive Styles Here */
+
+  footer{
+    width:100%;
+    height:300px;
+    background-color: #0A0826;
+    color:white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: white; */
+  }
+  footer>h4{
+    font-size: 1.5rem;
+    font-family: Poppins;
+    font-weight: 700;;
+    padding-top: 5px;
+  }
+
+  footer>p{
+    font-size: 1rem;
+    font-family: Manrope;
+    font-weight: 700;
+    color:#D9DBE1;
+    text-align: center;
+    padding-top: 5px;
+    /* padding-bottom: 20px; */
+
+  }
+  footer>.icons{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .icons img{
+    width: 24px;
+    background:  #ffffff;
+    height: 24px;
+    margin:0 10px;
+    
+  }
+
 
 @media screen and (max-width:576px) {
     body{
