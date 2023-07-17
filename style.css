@@ -18,6 +18,10 @@ body{
     font-family: 'Poppins', sans-serif; 
 }
 
+.primary-font{
+    font-family: 'Poppins', sans-serif; 
+}
+
 .menubar{
     display: none;;
 }
@@ -38,6 +42,7 @@ nav{
 nav>ul{
     display: flex;
     justify-content: space-between;
+    gap:30px;
 }
 nav li{
     list-style: none;
@@ -51,6 +56,7 @@ nav li a{
     font-weight:500;
     color: var(--primary-text-color);
 }
+
 .li-logo{
     width: 1.5rem;
     height: 1.5rem;
@@ -58,12 +64,63 @@ nav li a{
 
 }
 
+/* Main Part Start */
+.mainpart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main-text>h1{
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.main-text>p{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 450px;
+}
 
 
+
+
+
+.btn-round{
+    background-color: var(--btn-color);
+    color: white;
+    width: 200px;
+    height: 50px;
+    padding: 5px 24px;
+    border-radius: 30px;
+    margin-top: 20px;
+    border:0;
+    font-weight: 700px;
+}
+.ferrow{
+    margin-left: 20px;
+}
+
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .camera {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+  }
+  
 
 /* Responsive Styles Here */
-
-
 
 @media screen and (max-width:576px) {
     body{
@@ -85,6 +142,59 @@ nav li a{
             background-color: var(--primary-text-color);
             margin: 6px 0;
           }
+
+
+    .mainpart{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .camera {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .container .camera>img {
+    width: 100px;
+  }
+  
+  .container .circle {
+    width: 100%;
+  }
+
+.main-text>h1{
+    /* width: 400px; */
+    font-size: 2.5rem;
+}
+
+.main-text>p{
+    /* width: 80%;; */
+    font-size: 0.8rem;
+    text-align: center;
+}
+.main-text{
+    text-align: center;
+}
+
+
+
+
+
+
 }
 
 
