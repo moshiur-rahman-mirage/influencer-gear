@@ -14,8 +14,16 @@ font-family: 'Poppins', sans-serif; */
 }
 
 body{
-    margin:80px 120px;
+    
     font-family: 'Poppins', sans-serif; 
+}
+
+header{
+    margin:80px 120px;
+}
+
+main{
+    margin:80px 120px;
 }
 
 .primary-font{
@@ -99,6 +107,18 @@ nav li a{
     border:0;
     font-weight: 700px;
 }
+.btn-square{
+    background-color: var(--btn-color);
+    color: white;
+    width: 200px;
+    height: 50px;
+    padding: 5px 24px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border:0;
+    font-weight: 700px;
+}
+
 .ferrow{
     margin-left: 20px;
 }
@@ -121,11 +141,11 @@ nav li a{
 
 
   footer{
-    width:100%;
-    height:300px;
+    margin:0px !important;
+    height:200px;
     background-color: #0A0826;
     color:white;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     text-align: center;
     display: flex;
     align-items: center;
@@ -178,14 +198,104 @@ nav li a{
     align-items: center;
     justify-content: center;
     gap:40px;
-    
   }
 
-.line{
-    width:80%;
-    height: 5px;
-    background-color: black;
+
+  .card-collection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+
+
+.popular-collection{
+    margin-top: 100px;
 }
+.popular-collection h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 40px;;
+    font-family: Poppins;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(63, 44, 44, 0.3);
+    max-width: 300px;
+    margin: auto;
+    text-align: left;
+    font-family: arial;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+.card .caption{
+font-family: Poppins;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+  }
+
+  .card .price{
+    font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+  }
+
+  .card .description{
+    color:#787885;
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 700;
+    font-family: Inter;
+  }
+
+
+  .card img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .popular-collection>p{
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+font-family: Poppins;
+font-size: 1rem;
+font-weight: 700;
+margin-right: 30px;
+  }
+.featured-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    margin-top: 50px;
+}
+
+.featured-item>h4{
+    color: #0A0826;
+font-family: Poppins;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+}
+
+.featured-item>p{
+    color: #6C6C6C;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+}
+
+.fi-text{
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 @media screen and (max-width:576px) {
     body{
